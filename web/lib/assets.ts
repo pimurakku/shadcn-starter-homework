@@ -1,0 +1,46 @@
+export const assets = {
+  logo: "https://www.figma.com/api/mcp/asset/7264e9cd-76c6-472b-80ab-7baf3a423fe1",
+  avatarImage: "https://www.figma.com/api/mcp/asset/f5a40e43-382e-4f09-bfc3-c3cf5e931371",
+  // decorative
+  groupSwirl: "https://www.figma.com/api/mcp/asset/51c16201-9ca6-4414-ae92-620db028a962",
+  group1Swirl: "https://www.figma.com/api/mcp/asset/148dccb7-6780-4c38-8b31-1931926d0820",
+  lineDecor: "https://www.figma.com/api/mcp/asset/13d98406-0d8d-4472-a89d-e3748c61620e",
+  vector4: "https://www.figma.com/api/mcp/asset/122a8de8-5909-4365-a511-8932087a38cb",
+  vector5: "https://www.figma.com/api/mcp/asset/7935980b-f905-46c0-a14d-8c2dc282d522",
+  vector9: "https://www.figma.com/api/mcp/asset/90c5dbfa-b909-4790-bfcd-05b47b32e095",
+  vector10: "https://www.figma.com/api/mcp/asset/f1deb0f2-00e0-4145-bb91-faac57c6baba",
+  vector15: "https://www.figma.com/api/mcp/asset/6210db66-a3ba-44bf-ac9a-30aeb5636aec",
+  vector16: "https://www.figma.com/api/mcp/asset/2c144dd2-8e0c-4378-8881-00cfb5010758",
+  vector17: "https://www.figma.com/api/mcp/asset/597fac75-d5e3-4433-9982-fa3573a2e7ef",
+  // social icons (vectors)
+  iconInstagram: "https://www.figma.com/api/mcp/asset/e6714b4f-7a8a-4d06-85ff-a2a1cdc701c3",
+  iconLinkedin: "https://www.figma.com/api/mcp/asset/cd5f9315-94ee-4e58-97be-26d306224787",
+  iconFacebook: "https://www.figma.com/api/mcp/asset/6ff3b2eb-1b79-401f-83b4-b3c6c9fbe964",
+  // floating social icons (decorated/angled)
+  fbIcon: "https://www.figma.com/api/mcp/asset/940f013d-ef8b-4045-8607-2d3cb02bf27f",
+  ytbIcon: "https://www.figma.com/api/mcp/asset/5e5f8106-4c42-45d3-99a5-350c65eeea3b",
+  instIcon: "https://www.figma.com/api/mcp/asset/8aee8a24-736e-40b4-8fa0-50d7723e45bb",
+  removeBg: "https://www.figma.com/api/mcp/asset/0ad0d8ec-22c3-4cb2-9091-8bd469088e0c",
+  likeIcon: "https://www.figma.com/api/mcp/asset/55782441-c652-4af5-9075-9a095e79e0c2",
+  figmaIcon: "https://www.figma.com/api/mcp/asset/4a69d6ff-ac05-40b4-9f26-f7f0478a9149",
+  // illustrations / photos
+  womanPhoto: "https://www.figma.com/api/mcp/asset/310f5ea0-0f33-4642-bab8-1f43e96d0124",
+  hands2: "https://www.figma.com/api/mcp/asset/7f04e50a-4da6-443f-812c-2abc831d106d",
+  hands3: "https://www.figma.com/api/mcp/asset/dbc970b2-ae59-48ae-9d23-871b49c99bf9",
+  imageResearch: "https://www.figma.com/api/mcp/asset/4cae2698-468f-4300-969d-60f0d07c70a0",
+  imageConcept: "https://www.figma.com/api/mcp/asset/b1705e71-1b0b-4e17-9144-88914e2ea0fd",
+  imageDesign: "https://www.figma.com/api/mcp/asset/ff3e2a4f-8f7e-4869-a806-c4f3a19e63a9",
+  removeBg3: "https://www.figma.com/api/mcp/asset/fb03b899-e723-4d6a-8221-8b5ea639aabb",
+  // partner logos
+  partnerLogo1: "https://www.figma.com/api/mcp/asset/2a09ba5b-97d7-40bd-a2b7-b599af121075",
+  partnerLogo2: "https://www.figma.com/api/mcp/asset/a5d949a8-c84c-4e09-8219-80f43b472bc9",
+  // charity logos
+  charityLogo1: "https://www.figma.com/api/mcp/asset/1f930495-7dc5-4495-933f-94d4bf6c969e",
+  charityLogo2: "https://www.figma.com/api/mcp/asset/90d44d85-2023-4e83-a180-303435d8e506",
+  charityLogo3: "https://www.figma.com/api/mcp/asset/50400d5b-0947-4008-bad5-ae969f4cdde8",
+  charityLogo4: "https://www.figma.com/api/mcp/asset/ed3c46c5-f752-474f-ba21-5d1d0037b7d5",
+  charityLogo5: "https://www.figma.com/api/mcp/asset/2a72b27c-83de-4c5b-85b3-5ddccb19d824",
+  charityLogo6: "https://www.figma.com/api/mcp/asset/54eb12a6-876e-453e-bbae-0dadd40ee09d",
+  charityLogo7: "https://www.figma.com/api/mcp/asset/e9952342-8b73-4b96-b38f-7a99fce9285d",
+  charityLogo8: "https://www.figma.com/api/mcp/asset/45597a35-60ff-43d9-a50d-35d864df72e0",
+}
