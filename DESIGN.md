@@ -163,7 +163,7 @@ To re-shape the UI, re-export the kit's `border-radius` collection and regenerat
 | `--font-sans` | `"Inter", ui-sans-serif, system-ui, sans-serif` | kit `family/sans` = Inter |
 | `--font-mono` | `"Geist Mono", ui-monospace, SFMono-Regular, monospace` | kit `family/mono` = Geist Mono |
 
-Set in `@theme inline`. The variables alone don't load the fonts — install them (shadcn font registry or `next/font`) for the kit look; otherwise the stack falls back gracefully.
+Set in `@theme inline`. **The font is data-driven from the Figma `family/*` token, not a project default** — for this kit it resolves to Inter / Geist Mono; if the Figma file specifies different fonts, re-export and regenerate `--font-*` (don't hardcode or assume Inter). Custom fonts are fully supported — follow whatever the source file declares. The variables alone don't load the fonts — install them (shadcn font registry or `next/font`) for the exact look; otherwise the stack falls back gracefully.
 
 Registry example:
 

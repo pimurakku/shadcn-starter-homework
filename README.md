@@ -129,7 +129,7 @@ By design, to keep things minimal:
 - No authentication, routing helpers, or middleware
 - No Storybook, testing setup, or CI config
 - No theme toggle pre-installed (add `next-themes` when needed)
-- Fonts **declared** per the kit (`--font-sans` Inter, `--font-mono` Geist Mono in `globals.css`) but **not bundled** — install via the shadcn font registry or `next/font` to render exactly like Figma; until then the stack falls back gracefully
+- Fonts follow the **Figma file's `family/*` token** — not a fixed project default. This kit resolves to `--font-sans` Inter / `--font-mono` Geist Mono (declared in `globals.css`) but the files are **not bundled**: install via the shadcn font registry or `next/font` to render exactly like Figma (stack falls back gracefully meanwhile). If the Figma file uses different fonts, regenerate `--font-*` from its token — don't hardcode
 - No `tailwind.config.ts` (Tailwind v4 uses `@theme inline` in `globals.css` only)
 
 > Add things when the design calls for them, not before.
