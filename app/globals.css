@@ -16,6 +16,9 @@
      default (rounded-lg = 8px), kept for shadcn components that read it. */
   --radius: 0.5rem;
 
+  /* Page-level warm background from Figma "brown/2" */
+  --brown-2: #fcf9f6;
+
   /* shadcn/ui · light mode */
   --background: #ffffff;
   --foreground: #0a0a0a;
@@ -153,6 +156,7 @@
   --color-semantic-background: var(--semantic-background);
   --color-semantic-foreground: var(--semantic-foreground);
   --color-semantic-border: var(--semantic-border);
+  --color-brown-2: var(--brown-2);
 }
 
 @layer base {
