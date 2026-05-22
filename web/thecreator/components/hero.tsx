@@ -1,48 +1,14 @@
-import { assets } from "@/lib/assets"
-
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center px-40 py-36 w-full overflow-hidden">
-      {/* Decorative left swirl */}
-      <div
-        className="absolute top-0 opacity-70 pointer-events-none select-none"
-        style={{ left: "-80px", width: "340px" }}
-      >
-        <img src={assets.groupSwirl} alt="" className="w-full object-contain" />
+    <section className="relative flex flex-col items-center justify-center px-8 py-16 md:px-20 md:py-24 lg:px-40 lg:py-36 w-full overflow-hidden">
+      {/* Left hand image */}
+      <div className="absolute top-0 left-0 pointer-events-none select-none" style={{ width: "220px" }}>
+        <img src="/img/hero-left.png" alt="" className="w-full object-contain" />
       </div>
 
-      {/* Decorative right swirl */}
-      <div
-        className="absolute opacity-60 pointer-events-none select-none"
-        style={{ bottom: "-40px", right: "-40px", width: "220px" }}
-      >
-        <img src={assets.group1Swirl} alt="" className="w-full object-contain" />
-      </div>
-
-      {/* Floating social icons (decorative) */}
-      <div
-        className="absolute top-16 right-40 pointer-events-none select-none"
-        style={{ transform: "rotate(21.85deg)" }}
-      >
-        <img src={assets.fbIcon} alt="" className="w-8 h-8 opacity-80" />
-      </div>
-      <div
-        className="absolute bottom-24 left-32 pointer-events-none select-none"
-        style={{ transform: "rotate(-17.64deg)" }}
-      >
-        <img src={assets.fbIcon} alt="" className="w-12 h-12 opacity-70" />
-      </div>
-      <div
-        className="absolute top-28 left-48 pointer-events-none select-none"
-        style={{ transform: "rotate(157.75deg) scaleY(-1)" }}
-      >
-        <img src={assets.instIcon} alt="" className="w-6 h-6 opacity-70" />
-      </div>
-      <div
-        className="absolute bottom-40 right-60 pointer-events-none select-none"
-        style={{ transform: "rotate(25.59deg)" }}
-      >
-        <img src={assets.ytbIcon} alt="" className="w-9 h-9 opacity-80" />
+      {/* Right hand image */}
+      <div className="absolute top-0 right-0 pointer-events-none select-none" style={{ width: "220px" }}>
+        <img src="/img/hero-right.png" alt="" className="w-full object-contain" />
       </div>
 
       {/* Content */}
@@ -67,14 +33,13 @@ export default function Hero() {
 
         {/* Email input */}
         <div
-          className="flex items-center"
+          className="flex items-center w-full md:w-[354px]"
           style={{
             background: "white",
             border: "1px solid #e5e5e5",
             borderRadius: "8px",
             boxShadow: "0 1px 1px rgba(0,0,0,0.1)",
             height: "36px",
-            width: "354px",
           }}
         >
           <input

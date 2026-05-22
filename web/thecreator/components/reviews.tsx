@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef } from "react"
-import { assets } from "@/lib/assets"
 
 const CARD_WIDTH = 508
 const CARD_GAP = 32 // gap-8 = 2rem = 32px
@@ -38,8 +37,7 @@ export default function Reviews() {
   return (
     <section
       id="review"
-      className="flex flex-col gap-16 items-start overflow-hidden px-40 py-16 w-full"
-      style={{ minHeight: "1043px" }}
+      className="flex flex-col gap-8 md:gap-12 lg:gap-16 items-start overflow-hidden px-4 py-10 md:px-16 md:py-12 lg:px-40 lg:py-16 w-full"
     >
       <p className="text-xl leading-7 text-center text-foreground w-full">
         Hear from our customers from Top YouTube Channel
@@ -48,33 +46,18 @@ export default function Reviews() {
       {/* Title block */}
       <div className="flex flex-col items-start gap-0">
         <h2
-          className="font-bold text-foreground whitespace-nowrap"
+          className="font-bold text-foreground"
           style={{ fontSize: "clamp(36px, 3.9vw, 60px)", lineHeight: "60px" }}
         >
           We&apos;ve taught <strong>over 3,000 creators</strong>
         </h2>
 
-        <div className="relative">
-          {/* Wavy underline decoration */}
-          <img
-            src={assets.vector15}
-            alt=""
-            className="absolute pointer-events-none select-none"
-            style={{
-              left: "205px",
-              top: "2px",
-              width: "642px",
-              height: "70px",
-              objectFit: "fill",
-            }}
-          />
-          <h2
-            className="font-bold text-foreground whitespace-nowrap relative z-10"
-            style={{ fontSize: "clamp(36px, 3.9vw, 60px)", lineHeight: "60px" }}
-          >
-            how to <strong>grow on any Platform</strong>
-          </h2>
-        </div>
+        <h2
+          className="font-bold text-foreground"
+          style={{ fontSize: "clamp(36px, 3.9vw, 60px)", lineHeight: "60px" }}
+        >
+          how to <strong>grow on any Platform</strong>
+        </h2>
       </div>
 
       <h2
@@ -152,7 +135,7 @@ export default function Reviews() {
               style={{ width: "80px", height: "80px" }}
             >
               <img
-                src={assets.avatarImage}
+                src="/img/avatar.png"
                 alt={review.name}
                 className="w-full h-full object-cover rounded-full"
               />

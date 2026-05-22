@@ -1,79 +1,27 @@
-import { assets } from "@/lib/assets"
-
-const charityLogosRow1 = [
-  assets.charityLogo1,
-  assets.charityLogo2,
-  assets.charityLogo3,
-  assets.charityLogo4,
-]
-
-const charityLogosRow2 = [
-  assets.charityLogo5,
-  assets.charityLogo6,
-  assets.charityLogo7,
-  assets.charityLogo8,
-]
-
 export default function Charity() {
   return (
     <section
       id="charity"
-      className="flex flex-col items-start overflow-hidden px-40 py-16 w-full"
+      className="flex flex-col items-start px-4 py-10 md:px-16 md:py-12 lg:px-40 lg:py-16 w-full"
     >
-      <div className="flex gap-8 items-start w-full">
-        {/* Partner Logos Card — Pink/400 */}
-        <div
-          className="relative overflow-hidden rounded-2xl flex-shrink-0 bg-pink-400"
-          style={{ width: "580px", height: "515px" }}
-        >
-          {/* Row 1 logos */}
-          <div
-            className="absolute flex gap-4 items-center"
-            style={{ top: "56px", left: "50%", transform: "translateX(calc(-50% + 14px))" }}
-          >
-            {charityLogosRow1.map((src, i) => (
-              <div
-                key={i}
-                className="rounded-full overflow-hidden flex items-center justify-center flex-shrink-0 bg-pink-200"
-                style={{ width: "120px", height: "120px" }}
-              >
-                <img src={src} alt="" className="w-16 h-16 object-contain" />
-              </div>
-            ))}
-          </div>
+      <div className="flex flex-col xl:flex-row gap-8 items-center w-full">
 
-          {/* Row 2 logos */}
-          <div
-            className="absolute flex gap-4 items-center"
-            style={{ top: "192px", left: "50%", transform: "translateX(calc(-50% - 18px))" }}
-          >
-            {charityLogosRow2.map((src, i) => (
-              <div
-                key={i}
-                className="rounded-full overflow-hidden flex items-center justify-center flex-shrink-0 bg-pink-200"
-                style={{ width: "120px", height: "120px" }}
-              >
-                <img src={src} alt="" className="w-16 h-16 object-contain" />
-              </div>
-            ))}
-          </div>
-
-          {/* Description text */}
-          <p
-            className="absolute text-xl leading-7 text-foreground"
-            style={{ left: "56px", top: "331px", width: "412px" }}
-          >
+        {/* Charity image card — Pink/400 */}
+        <div className="relative overflow-hidden rounded-2xl md:flex-shrink-0 bg-pink-400 w-full md:w-[580px] md:h-[515px] flex flex-col justify-between">
+          <img
+            src="/img/charity.png"
+            alt="Charity"
+            className="w-full h-64 md:h-80 object-cover rounded-xl"
+          />
+          <p className="text-xl leading-7 text-foreground mt-6 p-8">
             We&apos;ve participated in events for children&apos;s education, health initiatives, and
             disaster relief. We&apos;re dedicated to ongoing involvement and exploring new
             opportunities.
           </p>
         </div>
 
-        {/* Info Card — White */}
-        <div
-          className="bg-white flex flex-col gap-9 items-start overflow-hidden p-14 rounded-2xl flex-shrink-0"
-          style={{ width: "580px", height: "515px", textAlign: "left" }}
-        >
+        {/* Info card — White */}
+        <div className="bg-white flex flex-col gap-9 items-start p-10 md:p-14 rounded-2xl md:flex-shrink-0 w-full md:w-[580px] md:h-[515px]">
           <h3
             className="font-bold text-foreground w-full"
             style={{ fontSize: "48px", lineHeight: "48px" }}
@@ -86,6 +34,7 @@ export default function Charity() {
             awareness about important causes.
           </p>
         </div>
+
       </div>
     </section>
   )

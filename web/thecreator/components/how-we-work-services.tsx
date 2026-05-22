@@ -1,36 +1,14 @@
-import { assets } from "@/lib/assets"
-
 export default function HowWeWorkServices() {
   return (
-    <section className="relative flex flex-col gap-16 items-center px-80 py-16 w-full overflow-hidden">
-      {/* Decorative vector left */}
-      <div
-        className="absolute pointer-events-none select-none opacity-80"
-        style={{ left: "-75px", top: 0, width: "460px" }}
-      >
-        <img src={assets.vector9} alt="" className="w-full" />
+    <section className="relative flex flex-col gap-8 md:gap-12 lg:gap-16 items-center px-8 py-10 md:px-24 md:py-12 lg:px-80 lg:py-16 w-full overflow-hidden">
+      {/* Left hand image */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none select-none w-20 md:w-60">
+        <img src="/img/how-we-work-02-left.png" alt="" className="w-full object-contain" />
       </div>
 
-      {/* Decorative vector right */}
-      <div
-        className="absolute pointer-events-none select-none opacity-70"
-        style={{ right: "-30px", top: "128px", width: "370px" }}
-      >
-        <img src={assets.vector10} alt="" className="w-full" />
-      </div>
-
-      {/* Like icon decorations */}
-      <div
-        className="absolute pointer-events-none select-none"
-        style={{ left: "210px", top: "280px", transform: "rotate(-14.34deg)" }}
-      >
-        <img src={assets.likeIcon} alt="" style={{ width: "120px", height: "102px" }} />
-      </div>
-      <div
-        className="absolute pointer-events-none select-none"
-        style={{ right: "210px", top: "215px", transform: "rotate(-165.66deg) scaleY(-1)" }}
-      >
-        <img src={assets.likeIcon} alt="" style={{ width: "120px", height: "102px" }} />
+      {/* Right hand image */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none w-20 md:w-60">
+        <img src="/img/how-we-work-02-right.png" alt="" className="w-full object-contain" />
       </div>
 
       <h2
